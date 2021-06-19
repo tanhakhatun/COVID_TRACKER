@@ -1,0 +1,52 @@
+.covidTrackerContainer {
+  padding: 0 20px;
+}
+
+.trackerCardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.flagSelectContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.countryDropDown{
+  padding: 10px;
+}
+
+.covidMap {
+  width: 400px;
+  height: 600px;
+}
+
+.covidTrackerBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .covidTrackerContainer {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(1fr);
+  }
+  .covidTrackerBody {
+    display: grid;
+    grid-template-columns: none;
+  }
+
+  .covidMap {
+    width: 300px;
+    height: 400px;
+  }
+}
